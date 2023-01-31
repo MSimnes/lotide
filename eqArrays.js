@@ -13,15 +13,13 @@ const assertEqual = function(actual, expected) {
 // ACTUAL FUNCTION
 
 const eqArrays = function(arrayOne, arrayTwo) {
-  let itemOne = arrayOne.toString();
-  let itemTwo = arrayTwo.toString();
-  if (itemOne === itemTwo) {
-    return true;
-  } else if (itemOne !== itemTwo) {
-    return false;
+  if (arrayOne.length !== arrayTwo.length) return false;
+  for (let i = 0; i < arrayOne.length; i++) {
+    if (arrayOne[i] !== arrayTwo[i]) return false;
   }
+  return true;
 };
 
 // TEST CODE
-  
-assertEqual(eqArrays(["1","2",3, 4], [1,2,3,4]), true);
+
+assertEqual(eqArrays([1,2,3,4], [1,2,3,4]), true);
