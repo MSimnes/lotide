@@ -3,13 +3,11 @@
 // 1. function to check if two arrays are equal
 
 const eqArrays = function(arrayOne, arrayTwo) {
-  let itemOne = arrayOne.toString();
-  let itemTwo = arrayTwo.toString();
-  if (itemOne === itemTwo) {
-    return true;
-  } else if (itemOne !== itemTwo) {
-    return false;
+  if (arrayOne.length !== arrayTwo.length) return false;
+  for (let i = 0; i < arrayOne.length; i++) {
+    if (arrayOne[i] !== arrayTwo[i]) return false;
   }
+  return true;
 };
 
 // 2.  function to display the appropriate message to the console if two arrays match or not by leveraging existing eqArrays function.
