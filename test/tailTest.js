@@ -1,5 +1,6 @@
-const assertArraysEqual = require('assertArraysEqual');
-const assertEqual = require('assertEqual');
+const assertArraysEqual = require('../assertArraysEqual');
+const assertEqual = require('../assertEqual');
+const tail = require('../tail');
 // TEST CODE
 
 // Test Case: Check original array

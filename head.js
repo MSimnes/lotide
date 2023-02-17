@@ -1,12 +1,6 @@
-const assertEqual = require('./assertEqual');
 // ACTUAL FUNCTION
-
 // Function to return the first item in an array
-
 const head = function(array) {
-  let result;
-  result = array.shift();
-  return result;
+  return array[0];
 };
-
-module.export = head;
+module.exports = head;
