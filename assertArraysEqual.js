@@ -23,3 +23,5 @@ const assertArraysEqual = function(arrayOne, arrayTwo) {
 
 assertArraysEqual([1,2,3,4],[1,2,3,4]);
 assertArraysEqual([2,3,4],[1,2,3,4]);
+
+module.exports = assertArraysEqual;
