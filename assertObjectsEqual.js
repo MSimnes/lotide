@@ -1,3 +1,8 @@
+const assertObjectsEqual = function(objectOne, objectTwo) {
+  const inspect = require('util').inspect;
+  const test = eqObjects(objectOne, objectTwo);
+  test === true ? console.log(`✔✔✔ Assertion Passed: ${inspect(objectOne)} === ${inspect(objectTwo)}`) : console.log(`🚨🚨🚨 Assertion Failed: ${inspect(objectOne)} !== ${inspect(objectTwo)}`);
+};
 // ASSERTION FUNCTIONS
 
 const eqArrays = function(arrayOne, arrayTwo) {
@@ -7,8 +12,6 @@ const eqArrays = function(arrayOne, arrayTwo) {
   }
   return true;
 };
-
-
 const eqObjects = function(object1, object2) {
   // store the keys in a variable for easy looping
   const keys1 = Object.keys(object1);
@@ -32,15 +35,8 @@ const eqObjects = function(object1, object2) {
   }
   return true;
 };
-
-// ACTUAL FUNCTION
-
-const assertObjectsEqual = function(objectOne, objectTwo) {
-  const inspect = require('util').inspect;
-  const test = eqObjects(objectOne, objectTwo);
-  test === true ? console.log(`✔✔✔ Assertion Passed: ${inspect(objectOne)} === ${inspect(objectTwo)}`) : console.log(`🚨🚨🚨 Assertion Failed: ${inspect(objectOne)} !== ${inspect(objectTwo)}`);
-};
-
 // TEST CODE
 
 assertObjectsEqual({a:1}, {a:1});
+
+module.exports = assertObjectsEqual;

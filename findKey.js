@@ -1,3 +1,12 @@
+const findKey = function(object, callback) {
+  for (let item in object) {
+    if (callback(object[item])) {
+      return item;
+    }
+  }
+  return undefined;
+};
+
 // ASSERTION FUNCTION
 
 const assertEqual = function(actual, expected) {
@@ -9,18 +18,6 @@ const assertEqual = function(actual, expected) {
     return;
   }
 };
-
-// ACTUAL FUNCTION
-
-const findKey = function(object, callback) {
-  for (let item in object) {
-    if (callback(object[item])) {
-      return item;
-    }
-  }
-  return undefined;
-};
-
 
 // TEST CODE
 
@@ -34,3 +31,4 @@ const object1 = {
 };
 
 assertEqual(findKey(object1, x => x.stars === 2), 'noma');
+module.exports = findKey;

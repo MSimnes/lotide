@@ -9,6 +9,5 @@ describe("#findKeyByValue", () => {
 });
 
 // TEST VARIABLES
-
 // eslint-disable-next-line camelcase
 const bestTVShowsByGenre = {sci_fi: "The Expanse", comedy: "Brooklyn Nine-Nine", drama:  "The Wire"};

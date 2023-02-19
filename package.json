@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@mike.simnes/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "This library contains various functions for working with numbers, strings, arrays and objects. It also includes a number of assertion functions.",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -14,7 +14,7 @@
     "url": "git+https://github.com/MSimnes/lotide.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Mike Simnes <mike.simnes@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/MSimnes/lotide/issues"

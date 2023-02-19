@@ -1,3 +1,11 @@
+const map = function(array, callback) {
+  const results = [];
+  for (let item of array) {
+    results.push(callback(item));
+  }
+  return results;
+};
+
 // ASSERTION FUNCTION
 
 // function to check if two arrays are equal
@@ -17,17 +25,6 @@ const assertArraysEqual = function(arrayOne, arrayTwo) {
   test === true ? console.log(`✔✔✔ Assertion Passed: [${arrayOne}] === [${arrayTwo}]`) : console.log(`🚨🚨🚨 Assertion Failed: [${arrayOne}] !== [${arrayTwo}]`);
 };
 
-// ACTUAL FUNCTION
-
-const map = function(array, callback) {
-  const results = [];
-  for (let item of array) {
-    results.push(callback(item));
-  }
-  return results;
-};
-
-
 // TEST CODE
 
 const words = ["ground", "control", "to", "major", "tom"];
@@ -41,3 +38,5 @@ assertArraysEqual([2, 4, 6, 8], results2);
 const welcome = ['Tiffany', "Henrik", "Abdul", "Sam"];
 const results3 = map(welcome, name =>  "Welcome, " + name);
 assertArraysEqual(['Welcome, Tiffany', "Welcome, Henrik", "Welcome, Abdul", "Welcome, Sam"], results3);
+
+module.exports = map;
