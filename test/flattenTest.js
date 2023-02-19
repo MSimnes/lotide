@@ -1,7 +1,7 @@
 const assert = require('chai').assert;
 const flatten = require('../flatten');
 
-describe("#eqArrays", () => {
+describe("#flatten", () => {
   it("returns [1, 2, 3, 4, 5] for [1, 2, [3, 4], 5]", () => {
     assert.deepEqual(flatten(arrayOne), [1, 2, 3, 4, 5]);
   });

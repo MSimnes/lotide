@@ -1,7 +1,7 @@
 const assert = require('chai').assert;
 const countOnly = require('../countOnly');
 
-describe("#flatten", () => {
+describe("#countOnly", () => {
   it('returns {Jason: 1} for ["Salima", "Jason", "Salima", "Fang", "Joe"],{"Jason": true, "Karima": false, "Fang": false}', () => {
     assert.deepEqual(countOnly(["Salima", "Jason", "Salima", "Fang", "Joe"], {"Jason": true, "Karima": false, "Fang": false}), {"Jason": 1});
   });
