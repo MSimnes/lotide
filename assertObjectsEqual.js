@@ -20,6 +20,7 @@ const eqObjects = function(object1, object2) {
     if (Array.isArray(object1[val]) && Array.isArray(object2[val])) {
       const arraysAreEqual = eqArrays(object1[val], object2[val]);
       if (!arraysAreEqual) return false;
+    // eslint-disable-next-line brace-style
     }
     // use recursion to check if values are objects and if those objects are not equal
     else if (typeof object1[val] === 'object' && typeof object2[val] === 'object') {

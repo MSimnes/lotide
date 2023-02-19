@@ -11,7 +11,6 @@ describe("#eqArrays", () => {
 });
 // TEST VARIABLES
 const arrayOne = [1, 2, [3, 4], 5];
-const arrayTwo = [1, [], 2, 3, 4, [5]];
 const arrayThree = [1, 2, [3], [4, [8,9,10], 5], 6, []];
 
 
