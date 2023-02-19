@@ -25,14 +25,10 @@ const eqObjects = function(object1, object2) {
     else if (typeof object1[val] === 'object' && typeof object2[val] === 'object') {
       const objectsAreEqual = eqObjects(object1[val], object2[val]);
       if (!objectsAreEqual) return false;
-    }
-    // check if the values are not equal
-    else {
-      if (object1[val] !== object2[val])
-        return false;
+    } else if (object1[val] !== object2[val]) {
+      return false;
     }
   }
-  // return true if all checks passed
   return true;
 };
 
