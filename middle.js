@@ -1,5 +1,3 @@
-//  ACTUAL FUNCTION
-
 // function to return the middle most element in an array.
 // If array length is two or less should return an empty array.
 // If array length is odd will return an array with a single element.

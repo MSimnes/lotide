@@ -1,3 +1,4 @@
+// Function compares two arrays and returns true or false if they match or not.
 const eqArrays = function(arrayOne, arrayTwo) {
   if (arrayOne.length !== arrayTwo.length) return false;
   for (let i = 0; i < arrayOne.length; i++) {

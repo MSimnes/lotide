@@ -1,4 +1,7 @@
 const eqArrays = require("./eqArrays");
+
+// Function compares objects to see if they are equal, works with nested objects and arrays.
+
 const eqObjects = function(object1, object2) {
   // store the keys in a variable for easy looping
   const keys1 = Object.keys(object1);

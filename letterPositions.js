@@ -1,3 +1,4 @@
+// Takes in a string and returns an object with the letters and positions of each letter.
 const letterPositions = function(string) {
   let results = {};
   for (let i = 0; i < string.length; i++) {

@@ -1,5 +1,4 @@
-// ACTUAL FUNCTION
-// function to return a new array containing only the tail of the original array
+// Function to return a new array containing only the tail of the original array
 const tail = function(array) {
   return array.slice(1);
 };

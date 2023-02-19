@@ -1,3 +1,4 @@
+// Takes in an object and a callback, returns the key according to the callback passed in.
 const findKey = function(object, callback) {
   for (let item in object) {
     if (callback(object[item])) {

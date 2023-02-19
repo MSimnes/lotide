@@ -1,3 +1,4 @@
+// takes in a string or several strings adn returns the count of letters excluding whitespaces.
 const countLetters = function(string) {
   let results = {};
   for (let letter of string) {

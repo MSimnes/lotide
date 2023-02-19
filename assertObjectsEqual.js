@@ -1,3 +1,4 @@
+// leverages eqObjects and eqArrays and returns a clear message to the console if they match or not.
 const assertObjectsEqual = function(objectOne, objectTwo) {
   const inspect = require('util').inspect;
   const test = eqObjects(objectOne, objectTwo);
