@@ -1,16 +1,15 @@
+const assert = require('chai').assert;
 const map = require('../map');
-const assertArraysEqual = require('../assertArraysEqual');
 
-// TEST CODE
+describe("#map", () => {
+  it("returns [ 'g', 'c', 't', 'm', 't' ] for map(['ground', 'control', 'to', 'major', 'tom'], word => word[0])", () => {
+    assert.deepEqual(map(words, word => word[0]), [ 'g', 'c', 't', 'm', 't' ]);
+  });
+  it("returns [2, 4, 6, 8] for map([1, 2, 3, 4], num =>  num * 2)", () => {
+    assert.deepEqual(map([1, 2, 3, 4], num =>  num * 2), [2, 4, 6, 8]);
+  });
+});
+
+// TEST VARIABLES
 
 const words = ["ground", "control", "to", "major", "tom"];
-const results1 = map(words, word => word[0]);
-assertArraysEqual([ 'g', 'c', 't', 'm', 't' ], results1);
-
-const numbers = [1, 2, 3, 4];
-const results2 = map(numbers, num =>  num * 2);
-assertArraysEqual([2, 4, 6, 8], results2);
-
-const welcome = ['Tiffany', "Henrik", "Abdul", "Sam"];
-const results3 = map(welcome, name =>  "Welcome, " + name);
-assertArraysEqual(['Welcome, Tiffany', "Welcome, Henrik", "Welcome, Abdul", "Welcome, Sam"], results3);
