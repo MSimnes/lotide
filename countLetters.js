@@ -1,4 +1,4 @@
-// takes in a string or several strings adn returns the count of letters excluding whitespaces.
+// Takes in a string or several strings and returns an object containing the count of letters excluding whitespaces.
 const countLetters = function(string) {
   let results = {};
   for (let letter of string) {
@@ -12,8 +12,5 @@ const countLetters = function(string) {
   }
   return results;
 };
-
-// TEST CODE
-console.log(countLetters("hahaha this is a test"));
 
 module.exports = countLetters;
