@@ -2,10 +2,7 @@
   "name": "@mike.simnes/lotide",
   "version": "1.0.1",
   "description": "This library contains various functions for working with numbers, strings, arrays and objects. It also includes a number of assertion functions.",
-  "main": "assertArraysEqual.js",
-  "directories": {
-    "test": "test"
-  },
+  "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
