@@ -1,4 +1,9 @@
-// Takes in a string or several strings and returns an object containingthe count of letters excluding whitespaces.
+/**
+ * Takes in a string parameter and returns an object containing the count of letters, with each letter's count stored as a value with its respective key.
+ * @param {string} string - The string or several strings to be counted.
+ * @returns {Object} - Returns an object containing the count of letters, with each letter's count stored as a value with its respective key.
+ */
+
 const countLetters = function(string) {
   let results = {};
   for (const letter of string) {
