@@ -13,5 +13,4 @@ const letterPositions = function(string) {
   }
   return results;
 };
-
 module.exports = letterPositions;

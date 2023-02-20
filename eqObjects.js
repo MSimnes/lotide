@@ -30,5 +30,4 @@ const eqObjects = function(object1, object2) {
   // return true if all checks passed
   return true;
 };
-
 module.exports = eqObjects;

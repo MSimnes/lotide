@@ -4,5 +4,4 @@ const without = function(source, itemsToRemove) {
   result = source.filter(elem => !itemsToRemove.includes(elem));
   return result;
 };
-
 module.exports = without;

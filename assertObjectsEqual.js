@@ -6,5 +6,4 @@ const assertObjectsEqual = function(objectOne, objectTwo) {
   const test = eqObjects(objectOne, objectTwo);
   test === true ? console.log(`✔✔✔ Assertion Passed: ${inspect(objectOne)} === ${inspect(objectTwo)}`) : console.log(`🚨🚨🚨 Assertion Failed: ${inspect(objectOne)} !== ${inspect(objectTwo)}`);
 };
-
 module.exports = assertObjectsEqual;

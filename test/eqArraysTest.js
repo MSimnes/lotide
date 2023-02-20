@@ -10,6 +10,3 @@ describe("#eqArrays", () => {
     assert.strictEqual(assertEqual(eqArrays(['M'], ['M']), true));
   });
 });
-
-// TEST CODE
-// assertEqual(eqArrays([1,2,3,4], [1,2,3,4]), true);
