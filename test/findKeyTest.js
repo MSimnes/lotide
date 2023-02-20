@@ -1,5 +1,16 @@
+const assert = require("chai").assert;
+const findKey = require('../findKey');
 
-// TEST CODE
+describe("#findKey", () => {
+  it("returns noma for findKey(object1, x => x.stars === 2)", () => {
+    assert.deepEqual(findKey(object1, x => x.stars === 2), 'noma');
+  });
+  it("returns undefined for (findKey(object1, x => x.stars === 9)", () => {
+    assert.deepEqual(findKey(object1, x => x.stars === 9), undefined);
+  });
+});
+
+// TEST VARIABLE
 
 const object1 = {
   "Blue Hill": {stars: 1},
@@ -9,5 +20,3 @@ const object1 = {
   "Ora": {stars: 2},
   "Akelarre": {stars: 3}
 };
-
-assertEqual(findKey(object1, x => x.stars === 2), 'noma');
