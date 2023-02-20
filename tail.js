@@ -1,4 +1,10 @@
-// Function to return a new array containing only the tail of the original array
+/**
+ * Returns a new array containing all elements except for the first one.
+ * 
+ * @param {Array} array - The array to process.
+ * @returns {Array} A new array containing all elements except for the first one.
+ */
+
 const tail = function(array) {
   return array.slice(1);
 };
