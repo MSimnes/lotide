@@ -31,24 +31,4 @@ const eqObjects = function(object1, object2) {
   return true;
 };
 
-// ASSERTION FUNCTIONS
-
-// const assertEqual = function(actual, expected) {
-//   if (actual === expected) {
-//     console.log(`✔✔✔ Assertion Passed: ${actual} === ${expected}`);
-//     return;
-//   } else if (actual !== expected) {
-//     console.log(`🚨🚨🚨 Assertion Failed: ${actual} !== ${expected}`);
-//     return;
-//   }
-// };
-
-// const eqArrays = function(arrayOne, arrayTwo) {
-//   if (arrayOne.length !== arrayTwo.length) return false;
-//   for (let i = 0; i < arrayOne.length; i++) {
-//     if (arrayOne[i] !== arrayTwo[i]) return false;
-//   }
-//   return true;
-// };
-
 module.exports = eqObjects;
