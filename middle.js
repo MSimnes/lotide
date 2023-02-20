@@ -1,14 +1,17 @@
-// function to return the middle most element in an array.
-// If array length is two or less should return an empty array.
-// If array length is odd will return an array with a single element.
-// If array length is even will return an array with two elements.
-
+/**
+ * Returns the middle most element(s) in an array.
+ * If array length is two or less should return an empty array.
+ * If array length is odd will return an array with a single element.
+ * If array length is even will return an array with two elements.
+ *
+ * @param {Array} array - The array to find the middle element(s) from.
+ * @returns {Array} - An array containing the middle element(s).
+ */
 const middle = function(array) {
   let result = [];
   // return empty array if length is less than 3
   if (array.length < 3) {
     return result;
-  // eslint-disable-next-line brace-style
   }
   // return middle two items if length is even
   else if (array.length % 2 === 0) {
@@ -16,7 +19,6 @@ const middle = function(array) {
     result.push(array[index]);
     result.push(array[index + 1]);
     return result;
-  // eslint-disable-next-line brace-style
   }
   // return middle element if array length is odd
   else if (array.length % 2 !== 0) {
