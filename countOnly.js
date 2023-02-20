@@ -1,4 +1,4 @@
-// This function takes in a collection of allItems and return counts for items selected in itemsToCount.
+// This function takes in a collection of allItems and return counts for items selected for in itemsToCount.
 const countOnly = function(allItems, itemsToCount) {
   let results = {};
   for (const item of allItems) {
@@ -11,17 +11,6 @@ const countOnly = function(allItems, itemsToCount) {
     }
   }
   return results;
-};
-
-// ASSERTION FUNCTION
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✔✔✔ Assertion Passed: ${actual} === ${expected}`);
-    return;
-  } else if (actual !== expected) {
-    console.log(`🚨🚨🚨 Assertion Failed: ${actual} !== ${expected}`);
-    return;
-  }
 };
 
 module.exports = countOnly;
