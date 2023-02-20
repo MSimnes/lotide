@@ -13,6 +13,9 @@
   "keywords": [],
   "author": "Mike Simnes <mike.simnes@gmail.com>",
   "license": "ISC",
+  "files": [
+    "!node_modules"
+  ],
   "bugs": {
     "url": "https://github.com/MSimnes/lotide/issues"
   },
