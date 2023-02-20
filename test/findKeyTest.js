@@ -11,7 +11,6 @@ describe("#findKey", () => {
 });
 
 // TEST VARIABLE
-
 const object1 = {
   "Blue Hill": {stars: 1},
   "Akaleri": {stars: 3},

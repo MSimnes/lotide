@@ -11,5 +11,4 @@ describe("#map", () => {
 });
 
 // TEST VARIABLES
-
 const words = ["ground", "control", "to", "major", "tom"];
