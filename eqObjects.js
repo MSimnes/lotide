@@ -8,7 +8,7 @@ const eqObjects = function(object1, object2) {
   const keys2 = Object.keys(object2);
   // check if length are not equal
   if (keys1.length !== keys2.length) return false;
-  for (let val of keys1) {
+  for (const val of keys1) {
     // check if values are arrays and check if not equal using eqArrays
     if (Array.isArray(object1[val]) && Array.isArray(object2[val])) {
       const arraysAreEqual = eqArrays(object1[val], object2[val]);

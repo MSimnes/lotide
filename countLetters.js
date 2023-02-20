@@ -1,7 +1,7 @@
-// Takes in a string or several strings and returns an object containing the count of letters excluding whitespaces.
+// Takes in a string or several strings and returns an object containingthe count of letters excluding whitespaces.
 const countLetters = function(string) {
   let results = {};
-  for (let letter of string) {
+  for (const letter of string) {
     if (letter === " ") {
       continue;
     } else if (results[letter]) {

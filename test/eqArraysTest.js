@@ -12,4 +12,4 @@ describe("#eqArrays", () => {
 });
 
 // TEST CODE
-assertEqual(eqArrays([1,2,3,4], [1,2,3,4]), true);
+// assertEqual(eqArrays([1,2,3,4], [1,2,3,4]), true);
