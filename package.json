@@ -1,6 +1,6 @@
 {
   "name": "@mike.simnes/lotide",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "This library contains various functions for working with numbers, strings, arrays and objects. It also includes a number of assertion functions.",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,24 @@
   "files": [
     "index",
     "test",
-    "!node_modules"
+    "!node_modules",
+    "assertArraysEqual.js",
+    "assertEqual.js",
+    "assertObjectsEqual.js",
+    "countLetters.js",
+    "countOnly.js",
+    "eqArrays.js",
+    "eqObjects.js",
+    "findKey.js",
+    "findKeyByValue.js",
+    "flatten.js",
+    "head.js",
+    "letterPositions.js",
+    "map.js",
+    "middle.js",
+    "tail.js",
+    "takeUntil.js",
+    "without.js"
   ],
   "bugs": {
     "url": "https://github.com/MSimnes/lotide/issues"
